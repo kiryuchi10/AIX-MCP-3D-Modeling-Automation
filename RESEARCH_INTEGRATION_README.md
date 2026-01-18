@@ -408,20 +408,4 @@ We thank the authors of the integrated research papers for their groundbreaking 
 - NAT3D team at S-Lab, Nanyang Technological University
 - PolyGen team at DeepMind
 
-**Note**: Our implementations include significant proprietary enhancements and optimizations beyond the original research papers.
 
-## Contact
-
-### For Authorized Use:
-- **Technical Support**: [authorized-support@company.com]
-- **Development Team**: [dev-team@company.com]
-
-### For Licensing Inquiries:
-- **Business Development**: [licensing@company.com]
-- **Legal Department**: [legal@company.com]
-
-### For Reporting Violations:
-- **IP Violations**: [violations@company.com]
-- **Security Issues**: [security@company.com]
-
-**⚠️ WARNING**: Unauthorized access or use is strictly prohibited and will be prosecuted to the full extent of the law.
