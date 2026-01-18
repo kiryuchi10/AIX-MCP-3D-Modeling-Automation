@@ -1,0 +1,377 @@
+# =============================================================================
+# MCP 3D Modeling Automation - Root .gitignore
+# =============================================================================
+
+# =============================================================================
+# MARKDOWN FILES (Except README files)
+# =============================================================================
+# Ignore all .md files except README.md variants
+*.md
+# But keep README files
+!README.md
+!readme.md
+!**/README.md
+!**/readme.md
+
+# =============================================================================
+# ENVIRONMENT & SECURITY FILES
+# =============================================================================
+# Environment variables (CRITICAL - NEVER COMMIT)
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Security keys and credentials
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+secrets/
+credentials/
+keys/
+tokens/
+*.secret
+*_secret*
+*_credential*
+*_password*
+*_token*
+*_api_key*
+config/secrets/
+
+# =============================================================================
+# DATABASE FILES
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+*.backup
+database/backups/
+db_backups/
+data/*.db
+data/*.sqlite
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+.ENV/
+.venv
+venv.bak/
+venv_backup/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =============================================================================
+# NODE.JS / FRONTEND
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache/
+.parcel-cache
+
+# Next.js
+.next
+
+# Nuxt.js
+.nuxt
+
+# Gatsby
+.cache/
+
+# Vuepress
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# =============================================================================
+# IDE & EDITOR FILES
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# APPLICATION SPECIFIC
+# =============================================================================
+# File uploads and outputs
+uploads/
+output/
+generated_models/
+3d_assets/
+models/
+renders/
+thumbnails/
+outputs/
+*.blend
+*.3dm
+*.fcstd
+*.obj
+*.fbx
+*.stl
+*.ply
+*.dae
+*.x3d
+*.gltf
+*.glb
+
+# Generated scripts
+scripts/generated/
+scripts/temp/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+
+# Temporary files
+tmp/
+temp/
+temporary/
+*.tmp
+*.bak
+*.swp
+*.old
+
+# Data directories
+data/
+storage/
+cache/
+temp/
+
+# Docker volumes
+docker-data/
+docker-volumes/
+
+# =============================================================================
+# RESEARCH & PROPRIETARY
+# =============================================================================
+# Research papers (may contain proprietary content)
+papers/
+research/
+*.pdf
+!docs/*.pdf
+
+# Proprietary scripts
+scripts/proprietary/
+templates/proprietary/
+custom_scripts/
+*_proprietary.*
+*_internal.*
+*_confidential.*
+
+# =============================================================================
+# CI/CD & DEPLOYMENT
+# =============================================================================
+# Local configuration overrides
+config.local.json
+settings.local.json
+local_config/
+local_settings/
+
+# Build outputs (if not using dist/)
+build/
+dist/
+
+# Deployment files (may contain secrets)
+deployment/
+infrastructure/
+k8s/
+kubernetes/
+terraform/
+ansible/
+*.tfstate
+*.tfstate.*
+.terraform/
+docker-compose.override.yml
+
+# =============================================================================
+# BACKUP & ARCHIVE
+# =============================================================================
+backups/
+archives/
+*.backup
+*.bak
+*.old
+*.orig
+*.archive
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# MISC
+# =============================================================================
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# Rope
+.ropeproject
+
+# =============================================================================
+# END
+# =============================================================================
